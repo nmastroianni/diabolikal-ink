@@ -9,7 +9,7 @@ const path = require("path")
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Your Site Title Goes Here",
+    title: "Diabolikal Tattoo Parlour"
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -22,9 +22,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: path.join(__dirname, `src`, `pages`),
+        path: path.join(__dirname, `src`, `pages`)
       },
-      __key: `pages`,
+      __key: `pages`
     },
-  ],
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`)
+      },
+      __key: `images`
+    }
+  ]
 }
