@@ -24,11 +24,11 @@ export default function Navigation() {
     }
   ]
   return (
-    <nav className="h-[86px] bg-[#45b549] text-[22px] grid place-items-center">
+    <nav className="h-[86px] bg-primary text-[22px] grid place-items-center">
       <ul className="flex flex-wrap justify-center">
         {menu.map(item => {
           return (
-            <li key="item.text">
+            <li key={`${item.text}`}>
               <Link href={`${item.path}`} className="py-[16px] px-[26px]">
                 {item.text}
               </Link>
