@@ -29,7 +29,7 @@ export default function Navigation() {
         {menu.map(item => {
           return (
             <li key={`${item.text}`}>
-              <Link href={`${item.path}`} className="py-[16px] px-[26px]">
+              <Link to={`${item.path}`} className="py-[16px] px-[26px]">
                 {item.text}
               </Link>
             </li>
