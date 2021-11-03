@@ -8,19 +8,19 @@ export default function Navigation() {
     },
     {
       text: "gallery",
-      path: "/gallery"
+      path: "/gallery/"
     },
     {
       text: "booking",
-      path: "/booking"
+      path: "/booking/"
     },
     {
       text: "about",
-      path: "/about"
+      path: "/about/"
     },
     {
       text: "contact",
-      path: "/contact"
+      path: "/contact/"
     }
   ]
   return (
