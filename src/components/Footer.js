@@ -47,10 +47,19 @@ export default function Footer() {
         <p>All rights reserved 2021. Vancouver Web Design, Raw Media Inc.</p>
         <ul>
           <li className="inline">
-            <a href="https://policies.google.com/privacy?hl=en-CA">Privacy</a> |
+            <a
+              href="https://policies.google.com/privacy?hl=en-CA"
+              className="hover:underline"
+            >
+              Privacy
+            </a>{" "}
+            |
           </li>
           <li className="inline ml-1.5">
-            <a href="https://policies.google.com/technologies/cookies?hl=en-ca">
+            <a
+              href="https://policies.google.com/technologies/cookies?hl=en-ca"
+              className="hover:underline"
+            >
               Cookie Policy
             </a>
           </li>
