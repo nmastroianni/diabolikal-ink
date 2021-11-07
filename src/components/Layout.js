@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 export default function Layout({ data, children }) {
   return (
-    <div id="layout-wrapper" className="font-metal">
+    <div id="layout-wrapper" className="font-metal bg-black">
       <Header />
       <Navigation />
       {children}
