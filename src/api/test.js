@@ -3,7 +3,8 @@ export default async function testHandler(req, res) {
   if (req.method !== "POST") {
     res.status(405).send("Method not allowed")
   } else {
-    const url = `${process.env.IG_GRAPH_URL}${process.env.NMIG}&limit=20`
+    let url =
+      req.body.url || `${process.env.IG_GRAPH_URL}${process.env.NMIG}&limit=8`
 
     try {
       const result = await fetch(url, { method: "GET" }).then(res => {
